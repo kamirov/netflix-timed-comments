@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Netflix Timed Comments",
+  "description": "Viki-style timed comments for Netflix",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    "images/*",
+    "js/*",
+    "css/*"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": ["https://www.netflix.com/*"],
+      "js": ["js/inject.js"]
+    }
+  ]
+}
