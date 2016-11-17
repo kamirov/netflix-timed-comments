@@ -19,4 +19,6 @@ Netflix has long since shuttered up their public API, so we have to get a bit cr
 
 # Notes
 
+I'm in the process of rewriting this extension. The files will all likely get scrapped and replaced. Only the README file should remain.
+
 Heads up. This is my first Node.js and MongoDB project and first Chrome extension. There might be some...less than efficient approaches taken, but I welcome any criticism. :)
