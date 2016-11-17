@@ -16,12 +16,34 @@ setInterval(function() {
 function ntc_main() {
   if (pageIsWatch()) {
     cacheSession();
+    getComments();
     startUpdateTimer();
   }
   else {
     reset_ntc();
   }
 
+}
+
+
+// Queries server for comments
+function getComments() {
+  var url = 'https://localhost/netflix-timed-comments/backend/get.php',
+      xhr = new XMLHttpRequest(),
+      params = '?';
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+        console.log(xhr.responseText);
+        var response = JSON.parse(xhr.responseText);
+        console.log(response);
+    }
+  };
+
+  params += 'video_id=' + ntc.video.id;
+  url += params;
+
+  xhr.open("GET", url, true);
+  xhr.send();
 }
 
 

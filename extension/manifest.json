@@ -10,7 +10,7 @@
     "default_popup": "html/popup.html"
   },
   "permissions": [
-    "tabs"
+    "https://localhost/*"
   ],
   "web_accessible_resources": [
     "images/*",
