@@ -12,8 +12,9 @@ Netflix has long since shuttered up their public API, so we have to get a bit cr
    - `netflix.reactContext.models.userInfo.data.(guid|name)`
 - [x] Figure out how far into the movie we are
    - `document.getElementsByClassName('player-slider')[0].firstChild.innerHTML`
-- [x] Figure out how to store comments on our server
-   - Node.js + MongoDB
+- [x] What's our stack?
+   - MERN
+- [ ] Make DB schema
 - [ ] Style comments
 - [ ] Finish writing this To Do list
 
